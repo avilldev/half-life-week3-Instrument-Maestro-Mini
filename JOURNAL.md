@@ -116,7 +116,7 @@ My solution is removing two aspects that are not absolutely necessary to the pro
 
 ![Untitled drawing 24](https://halflife.hackclub-assets.com/sessions/s5X6uAidfBv2Me3zVHdgxREVUKqtvsIM/63f6966ccd164d612dad87f9ae07db2d72e22c52875886c19a1744e09ae0cce4.png)
 
-I decided to ultimately go with Alibaba because the prices were cheaper. I completed the final BOM.
+I decided to ultimately go with Alibaba because the prices were cheaper. I completed the final BOM. I've already got the 1k resistor, so I didn't include it.
 
 ## Coding
 - Installed the Adafruit MCP23017 library in the Arduino IDE.
