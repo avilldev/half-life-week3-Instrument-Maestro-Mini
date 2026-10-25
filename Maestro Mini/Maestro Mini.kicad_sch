@@ -9,14 +9,18 @@
 		(date "2026-10-24")
 	)
 	(lib_symbols
-		(symbol "Connector_Audio:AudioJack3"
+		(symbol "Connector_Generic:Conn_01x03"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 8.89 0)
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -25,8 +29,8 @@
 					)
 				)
 			)
-			(property "Value" "AudioJack3"
-				(at 0 6.35 0)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -57,7 +61,7 @@
 					)
 				)
 			)
-			(property "Description" "Audio Jack, 3 Poles (Stereo / TRS)"
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -68,7 +72,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "audio jack receptacle stereo headphones phones TRS connector"
+			(property "ki_keywords" "connector"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -79,7 +83,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Jack*"
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -90,45 +94,10 @@
 					)
 				)
 			)
-			(symbol "AudioJack3_0_1"
+			(symbol "Conn_01x03_1_1"
 				(rectangle
-					(start -5.08 -5.08)
-					(end -6.35 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 -2.54) (xy -1.27 -3.175) (xy -0.635 -2.54) (xy -0.635 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0.635 -3.175) (xy 1.27 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.54 3.81)
-					(end -5.08 -5.08)
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -137,31 +106,50 @@
 						(type background)
 					)
 				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -2.54) (xy -3.175 -3.175) (xy -3.81 -2.54)
-					)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "AudioJack3_1_1"
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "R"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -170,16 +158,16 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name ""
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "S"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -188,16 +176,16 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name ""
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "T"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3166,7 +3154,7 @@
 		(at 55.88 185.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d531e9fd-ab2d-4457-a14c-eb51ef00e805")
+		(uuid "ef9f8916-0f3b-454d-bcaa-b8f5e3a15d81")
 	)
 	(junction
 		(at 50.8 185.42)
@@ -3306,6 +3294,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 160.02) (xy 39.37 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d6cf743-555d-4170-a6ae-4ae2e40d587e")
+	)
+	(wire
+		(pts
 			(xy 53.34 160.02) (xy 58.42 160.02)
 		)
 		(stroke
@@ -3366,13 +3364,33 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 185.42) (xy 53.34 185.42)
+			(xy 55.88 173.99) (xy 55.88 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2358db63-6e47-4a2e-88fc-e61d745955ec")
+	)
+	(wire
+		(pts
+			(xy 53.34 185.42) (xy 55.88 185.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "24eb1e0e-0c26-4459-aa8c-1045d08a9dc7")
+	)
+	(wire
+		(pts
+			(xy 72.39 179.07) (xy 68.58 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25f47e18-e5df-4a19-b9c6-c1aaed93ae4d")
 	)
 	(wire
 		(pts
@@ -3383,16 +3401,6 @@
 			(type default)
 		)
 		(uuid "2827e6cd-5f13-4d65-8b6f-bef89944d017")
-	)
-	(wire
-		(pts
-			(xy 57.15 185.42) (xy 55.88 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "282cc695-e3b6-4f0b-8b97-86a0f8615d47")
 	)
 	(wire
 		(pts
@@ -3413,6 +3421,16 @@
 			(type default)
 		)
 		(uuid "29ed2de6-9635-4b9e-823b-ac9ce149c88c")
+	)
+	(wire
+		(pts
+			(xy 62.23 157.48) (xy 62.23 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bf1c616-d457-4b25-9190-9f56327b189e")
 	)
 	(wire
 		(pts
@@ -3456,13 +3474,13 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 168.91) (xy 53.34 168.91)
+			(xy 62.23 173.99) (xy 55.88 173.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "360a4270-a7b4-4434-bf25-1697e3df18d5")
+		(uuid "37a430d2-570c-401d-8b3b-9cb678e38cb5")
 	)
 	(wire
 		(pts
@@ -3483,6 +3501,16 @@
 			(type default)
 		)
 		(uuid "3b533914-2fbd-4102-9eab-eb85d493f3d1")
+	)
+	(wire
+		(pts
+			(xy 41.91 160.02) (xy 41.91 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bdb347b-a613-469f-baa4-5725b4eb9ea9")
 	)
 	(wire
 		(pts
@@ -3606,16 +3634,6 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 166.37) (xy 53.34 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5171af2b-d551-4608-b0c0-0b091b863b5c")
-	)
-	(wire
-		(pts
 			(xy 231.14 33.02) (xy 234.95 33.02)
 		)
 		(stroke
@@ -3633,16 +3651,6 @@
 			(type default)
 		)
 		(uuid "5564df34-0e87-4db1-add6-15198e721ff8")
-	)
-	(wire
-		(pts
-			(xy 55.88 170.18) (xy 55.88 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d3b46c6-de7c-442d-964c-9471279dddd1")
 	)
 	(wire
 		(pts
@@ -3693,6 +3701,16 @@
 			(type default)
 		)
 		(uuid "7175cc49-6577-430a-adeb-dd388310ddf1")
+	)
+	(wire
+		(pts
+			(xy 39.37 166.37) (xy 53.34 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74bc4f58-5f9e-452f-80d4-7e9c668e9cab")
 	)
 	(wire
 		(pts
@@ -3826,16 +3844,6 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 165.1) (xy 78.74 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "90781211-7b87-45d1-a31b-dd8ff8c993dc")
-	)
-	(wire
-		(pts
 			(xy 207.01 72.39) (xy 208.28 72.39)
 		)
 		(stroke
@@ -3843,6 +3851,36 @@
 			(type default)
 		)
 		(uuid "93054f8c-366f-45fc-8b1a-bfa765443096")
+	)
+	(wire
+		(pts
+			(xy 44.45 160.02) (xy 44.45 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "947d765a-2f95-48b4-874e-2d62a3030d58")
+	)
+	(wire
+		(pts
+			(xy 76.2 157.48) (xy 62.23 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a747b3a-b6a8-46b8-a4c1-8a984d040af4")
+	)
+	(wire
+		(pts
+			(xy 41.91 168.91) (xy 53.34 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b2b37bb-e0b7-4d56-be6a-020eea6b82fb")
 	)
 	(wire
 		(pts
@@ -3966,6 +4004,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 165.1) (xy 76.2 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7d794c4-ec60-4456-97b8-ae051cfae0c5")
+	)
+	(wire
+		(pts
 			(xy 53.34 185.42) (xy 50.8 185.42)
 		)
 		(stroke
@@ -4016,6 +4064,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 172.72) (xy 72.39 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfac5577-2e38-4e26-bae5-87e9ed27d45f")
+	)
+	(wire
+		(pts
 			(xy 39.37 143.51) (xy 40.64 143.51)
 		)
 		(stroke
@@ -4026,6 +4084,26 @@
 	)
 	(wire
 		(pts
+			(xy 55.88 185.42) (xy 57.15 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e441687b-69cf-4a04-8cb0-c08e57654d57")
+	)
+	(wire
+		(pts
+			(xy 44.45 171.45) (xy 50.8 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e44c54e8-0a8c-4046-a5e9-ea51d867952a")
+	)
+	(wire
+		(pts
 			(xy 231.14 88.9) (xy 231.14 90.17)
 		)
 		(stroke
@@ -4033,6 +4111,16 @@
 			(type default)
 		)
 		(uuid "e8c90e14-c2a8-4e5c-b878-e89603a88dbc")
+	)
+	(wire
+		(pts
+			(xy 76.2 165.1) (xy 78.74 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e922d6ee-b99e-44b4-b07f-3d48f0688e9e")
 	)
 	(wire
 		(pts
@@ -4113,16 +4201,6 @@
 			(type default)
 		)
 		(uuid "fa52d7de-8b05-4bfd-9e50-7069e5da41f0")
-	)
-	(wire
-		(pts
-			(xy 78.74 170.18) (xy 55.88 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fdb11f75-2abb-477c-93f9-9c8aeaa7cc55")
 	)
 	(label "BTN_D"
 		(at 91.44 73.66 180)
@@ -4899,6 +4977,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 41.91 154.94 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f511207-5d65-40dc-a094-866fb511a6fa")
+		(property "Reference" "J1"
+			(at 46.99 153.6699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x03"
+			(at 46.99 156.2099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 41.91 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 41.91 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "55c58810-b77a-45a8-8454-9f86f450f47e")
+		)
+		(pin "1"
+			(uuid "8dd75216-2a32-4cee-b282-3673cf9a0eb7")
+		)
+		(pin "3"
+			(uuid "9694ab36-41e9-4e1f-9d52-6da523345a35")
+		)
+		(instances
+			(project "Maestro Mini"
+				(path "/8a4c5451-5e71-4040-9fb9-375bcc6c899f"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Speaker")
 		(at 130.81 172.72 0)
 		(unit 1)
@@ -4932,7 +5095,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 130.81 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -5714,7 +5877,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 45.72 187.198 90)
 			(hide yes)
 			(show_name no)
@@ -5796,7 +5959,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-28_W7.62mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 46.482 30.48 90)
 			(hide yes)
 			(show_name no)
@@ -5917,84 +6080,6 @@
 			(project "Maestro Mini"
 				(path "/8a4c5451-5e71-4040-9fb9-375bcc6c899f"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 72.39 172.72 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "50dbeb9b-6337-491d-aa49-75963b047120")
-		(property "Reference" "#PWR030"
-			(at 72.39 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 72.39 177.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 72.39 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 72.39 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 72.39 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d3026b44-252c-4f2c-bdf9-aa6a986d80db")
-		)
-		(instances
-			(project "Maestro Mini"
-				(path "/8a4c5451-5e71-4040-9fb9-375bcc6c899f"
-					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -6268,7 +6353,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Imported Parts:Display_128x64_096_I2C"
 			(at 45.72 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -6479,89 +6564,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:AudioJack3")
-		(at 45.72 168.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "759438bf-3fba-40dd-9fb7-e9e94869ccc2")
-		(property "Reference" "J2"
-			(at 43.815 160.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AudioJack3"
-			(at 43.815 162.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 45.72 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.72 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS)"
-			(at 45.72 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "S"
-			(uuid "fa68670a-cfb1-4b75-bd84-79cb66a428d5")
-		)
-		(pin "R"
-			(uuid "94537982-c078-4f86-b7e3-727034888497")
-		)
-		(pin "T"
-			(uuid "f66bf1d4-41df-46c9-bf24-bae08358b367")
-		)
-		(instances
-			(project "Maestro Mini"
-				(path "/8a4c5451-5e71-4040-9fb9-375bcc6c899f"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 29.21 100.33 0)
 		(unit 1)
@@ -6671,7 +6673,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 97.79 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -6751,7 +6753,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 127 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6872,84 +6874,6 @@
 			(project "Maestro Mini"
 				(path "/8a4c5451-5e71-4040-9fb9-375bcc6c899f"
 					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 77.47 165.1 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "81534758-d713-4b62-b864-be9c2bab143b")
-		(property "Reference" "#PWR028"
-			(at 77.47 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 77.47 160.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 77.47 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 77.47 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 77.47 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4693b661-3f9a-4298-a9cd-32b911618174")
-		)
-		(instances
-			(project "Maestro Mini"
-				(path "/8a4c5451-5e71-4040-9fb9-375bcc6c899f"
-					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -7377,7 +7301,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 167.64 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -7537,7 +7461,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 227.33 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -7700,7 +7624,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-28_W7.62mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 28.702 30.48 90)
 			(hide yes)
 			(show_name no)
@@ -7782,7 +7706,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 			(at 83.82 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -7949,7 +7873,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 97.79 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -8029,7 +7953,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 97.79 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -8078,6 +8002,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 68.58 179.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d4081bbe-7f7b-4b0c-a2aa-46de6ded5351")
+		(property "Reference" "#PWR030"
+			(at 68.58 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 68.58 173.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 68.58 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2de9b998-38a1-4f2d-a40a-9fca30ca491f")
+		)
+		(instances
+			(project "Maestro Mini"
+				(path "/8a4c5451-5e71-4040-9fb9-375bcc6c899f"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 97.79 73.66 0)
 		(unit 1)
@@ -8109,7 +8111,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 97.79 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -8189,7 +8191,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 64.77 184.4548 0)
 			(hide yes)
 			(show_name no)
@@ -8411,7 +8413,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 127 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -8491,7 +8493,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 167.64 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -8651,7 +8653,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-40-1EP_6x6mm_P0.5mm_EP4.6x4.6mm"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 229.87 112.776 90)
 			(hide yes)
 			(show_name no)
@@ -8842,7 +8844,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 167.64 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -8922,7 +8924,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 127 86.36 0)
 			(hide yes)
 			(show_name no)
